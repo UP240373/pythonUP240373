@@ -44,3 +44,20 @@ print("Tuple (tuple) = ", type((9.8, 3.14, 2.7)))
 print("")
 print("")
 print("")
+
+"""
+
+        Comandos para el "cmd" de Visual Studio
+    
+    $ cd 'Direccion a la que deseas moverte'
+
+    / Verificas el estado de los archivos
+    $ git status 
+
+    / Guardas los archivos 
+    $ git add .
+
+    / Realiza el comentario para el repositorio 
+    $ git commit -m "Introducir el comentario"
+
+"""

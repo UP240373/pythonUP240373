@@ -5,7 +5,7 @@ N = int(10)
 F = float(12.5234)
 C = complex(4 + 2j)
 
-S = 'martin emanuel es joto y estupido'
+S = 'martin emanuel'
 B = True
 L = [1, 2, 3, 4, 5, 6] 
 T = ('Angel', 'Juan', 'Gabriel')

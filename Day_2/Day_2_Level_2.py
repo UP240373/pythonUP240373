@@ -47,10 +47,7 @@ print("")
 #       Ejercicios 3
 
 valor_max = max(len(first_name), len(last_name))
-if valor_max == len(first_name):
-    print('El primer nombre es mayor')
-elif valor_max == len(last_name):
-    print('Los apellidos son mayores')
+print('el mayor tiene: ', valor_max)
 
 print("")
 print("")
@@ -139,13 +136,6 @@ print("")
 print("")
 
 
-
-
-
-
-marina = 170
-
-print('marina es una: ', type(marina))
 
 
 

@@ -70,7 +70,38 @@ print(company)
 #       Ejercicios 12
 
 print(company.replace('Python', 'Everyone to Python'))
+print("")
 
+
+#       Ejercicios 13
+
+print(company.split())
+print("")
+
+#       Ejercicios 14
+
+Apps = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon"
+print(Apps.split(', '))
+print("")
+
+
+#       Ejercicios 15
+
+company = 'Coding For All'
+print('Caracter num 0:', company[0])
+print("")
+
+
+#       Ejercicios 16
+
+print('Ultimo caracter:', company[-1])
+print("")
+
+
+#       Ejercicios 17
+
+print('Caracter num 10:',company[10])
+print("")
 
 
 

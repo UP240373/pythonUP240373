@@ -162,13 +162,117 @@ print("")
 
 #       Ejercicios 24
 
+print('Ultima posicion del string con la palabra \"because\": ', company.rfind(text1))  
+
+print('\n\n')
+
+
+#       Ejercicios 25
+
+text1 = company[31:54]
+
+print(text1) 
+
+print('\n\n')
+
+
+#       Ejercicios 26
+
 company = 'You cannot end a sentence with because because because is a conjunction'
 text1 = 'because'
 
-print('Ultima posicion del string con la palabra \"because\": ', company.rfind(text1))  
+print('Primera letra de \"because\" en el string: ', company.find(text1))  
+
+print('\n\n')
 
 
+#       Ejercicios 27
 
+text1 = company[31:54]
+
+print(text1) 
+
+print('\n\n')
+
+
+#       Ejercicios 28
+
+company = 'Coding For All'
+print('¿\"Coding\" esta dentro de string? =', company.startswith('Coding'))
+
+
+#       Ejercicios 29
+
+print('¿\"coding\" esta dentro de string? =', company.endswith('coding'))
+
+print('\n\n')
+
+
+#       Ejercicios 30
+
+company = '   Coding For All      '
+print(company)
+print(company[3:17])
+
+print('\n\n')
+
+#       Ejercicios 31
+
+text1 = '30DaysOfPython'
+print('¿"', text1,'" funciona como variable? =', text1.isidentifier())
+
+text1 = 'thirty_days_of_python'
+print('¿"', text1,'" funciona como variable? =', text1.isidentifier()) 
+
+print('\n\n')
+
+
+#       Ejercicios 32
+
+text1 = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+text2 = '# '.join(text1)
+print(text2)
+
+print('\n\n')
+
+
+#       Ejercicios 33
+
+print('I am enjoying this challenge. \nI just wonder what is next.')
+
+print('\n\n')
+
+
+#       Ejercicios 34
+
+print('Name\tAge\tCountry\tCity')
+print('Abdul\t18\tMexico\tAguascalientes')
+
+print('\n\n')
+
+
+#       Ejercicios 35
+
+radio = 10
+area = 3.14 * radio ** 2
+text1 = 'El area del circulo con un radio de %s es de %s metros cuadrados' %(radio, area)
+print(text1)
+
+print('\n\n')
+
+
+#       Ejercicios 36
+
+a = 8
+b = 6
+
+print('{} + {} = {}'.format(a, b, a + b))
+print('{} - {} = {}'.format(a, b, a - b))
+print('{} * {} = {}'.format(a, b, a * b))
+print('{} / {} = {:.2f}'.format(a, b, a / b))
+print('{} % {} = {}'.format(a, b, a % b))
+print('{} // {} = {}'.format(a, b, a // b))
+print('{} ** {} = {}'.format(a, b, a ** b))
 
 
 

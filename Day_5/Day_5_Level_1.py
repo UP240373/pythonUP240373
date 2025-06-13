@@ -151,12 +151,93 @@ print("")
 
 #       Ejercicios 19
 
-it_companies = ['Facebook', 'Google', 'Microsoft', 'Samsung', 'IBM', 'Oracle', 'Amazon']
+it_companies = ['Facebook', 'Google', 'Microsoft', 'IT', 'IBM', 'Oracle', 'Amazon', 'IT']
 
+it_companies.pop(7)
 it_companies.pop(6)
 it_companies.pop(5)
+print(it_companies)
+print("")
+
+
+#       Ejercicios 20
+
+it_companies = ['IT', 'Facebook', 'Google', 'Microsoft', 'IT', 'IBM', 'Oracle', 'Amazon', 'IT']
+
 it_companies.pop(4)
 print(it_companies)
+print("")
+
+
+#       Ejercicios 21
+
+it_companies = ['IT', 'Facebook', 'Google', 'Microsoft', 'IT', 'IBM', 'Oracle', 'Amazon', 'IT']
+
+it_companies.remove('IT')
+print(it_companies)
+print("")
+
+
+#       Ejercicios 22
+
+it_companies = ['IT', 'Facebook', 'Google', 'Microsoft', 'IT', 'IBM', 'Oracle', 'Amazon', 'IT']
+
+it_companies.pop(4)
+print(it_companies)
+print("")
+
+
+#       Ejercicios 23
+
+it_companies = ['IT', 'Facebook', 'Google', 'Microsoft', 'IT', 'IBM', 'Oracle', 'Amazon', 'IT']
+
+it_companies.pop()
+print(it_companies)
+
+print('\n\n')
+
+
+#       Ejercicios 24
+
+it_companies = ['IT', 'Facebook', 'Google', 'Microsoft', 'IT', 'IBM', 'Oracle', 'Amazon', 'IT']
+
+it_companies.remove('IT')
+print('Existe \"IT\" en la cadena:', 'IT' in it_companies)
+it_companies.remove('IT')
+it_companies.remove('IT')
+print('Existe \"IT\" en la cadena:', 'IT' in it_companies)
+print(it_companies)
+print("")
+
+
+#       Ejercicios 25
+
+it_companies.clear()
+print(it_companies)
+print('\n\n')
+
+
+#       Ejercicios 26
+
+front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+back_end = ['Node','Express', 'MongoDB']
+
+print(' '.join(front_end))
+print(' '.join(back_end))
+
+print("")
+
+
+#       Ejercicios 27
+
+full_stack = (' '.join(front_end)) + (' ')+ (' '.join(back_end))
+print(full_stack)
+print("")
+
+front_end.append('Python')
+front_end.append('SQL')
+full_stack = (' '.join(front_end)) + (' ') + (' '.join(back_end))
+print(full_stack)
 print("")
 
 

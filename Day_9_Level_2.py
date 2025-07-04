@@ -3,7 +3,7 @@ print('\n\n')
 
 #       Ejercicios 1
 
-calificacion = 0 #int(input('Introduce tu calificacion: '))
+calificacion = int(input('Introduce tu calificacion: '))
 
 if calificacion <= 100 and calificacion >= 90:
     print('Sacaste una A')
@@ -20,7 +20,7 @@ print()
 
 #       Ejercicios 2
 
-mes = 0 #str(input('Introduce un mes: '))
+mes = str(input('Introduce un mes: '))
 
 if mes == 'septiembre' or mes == 'octubre' or mes == 'noviembre':
     print('Es temporada de otoño')

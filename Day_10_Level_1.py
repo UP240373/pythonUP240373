@@ -74,7 +74,7 @@ for i in range(102):
     if i % 2 == 0:
         print(i)
 
-print()
+print('\n\n')
 
 
 #       Ejercicios 8
@@ -83,7 +83,7 @@ for i in range(100):
     if i % 2 != 0:
         print(i)
 
-print()
+print('\n\n')
 
 
 

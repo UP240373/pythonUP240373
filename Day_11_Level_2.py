@@ -3,7 +3,7 @@ print('\n\n')
 
 #       Ejercicios 1
 
-n = 100 #int(input('Introduce un numero: '))
+n = int(input('Introduce un numero: '))
 
 def evens_and_odds(n):
     cont_odds = 0
@@ -25,7 +25,7 @@ print('\n\n')
 
 #       Ejercicios 2
 
-n = 5 #int(input('Introduce un numero: '))
+n = int(input('Introduce un numero: '))
 
 def factorial(n):
     result = 1

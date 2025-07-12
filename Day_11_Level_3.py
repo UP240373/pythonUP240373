@@ -1,205 +1,9 @@
 
 print('\n\n')
 
-# Countries 
+# Variables 
 
 countries = [
-  'Afghanistan',
-  'Albania',
-  'Algeria',
-  'Andorra',
-  'Angola',
-  'Antigua and Barbuda',
-  'Argentina',
-  'Armenia',
-  'Australia',
-  'Austria',
-  'Azerbaijan',
-  'Bahamas',
-  'Bahrain',
-  'Bangladesh',
-  'Barbados',
-  'Belarus',
-  'Belgium',
-  'Belize',
-  'Benin',
-  'Bhutan',
-  'Bolivia',
-  'Bosnia and Herzegovina',
-  'Botswana',
-  'Brazil',
-  'Brunei',
-  'Bulgaria',
-  'Burkina Faso',
-  'Burundi',
-  'Cambodia',
-  'Cameroon',
-  'Canada',
-  'Cape Verde',
-  'Central African Republic',
-  'Chad',
-  'Chile',
-  'China',
-  'Colombi',
-  'Comoros',
-  'Congo (Brazzaville)',
-  'Congo',
-  'Costa Rica',
-  "Cote d'Ivoire",
-  'Croatia',
-  'Cuba',
-  'Cyprus',
-  'Czech Republic',
-  'Denmark',
-  'Djibouti',
-  'Dominica',
-  'Dominican Republic',
-  'East Timor (Timor Timur)',
-  'Ecuador',
-  'Egypt',
-  'El Salvador',
-  'Equatorial Guinea',
-  'Eritrea',
-  'Estonia',
-  'Ethiopia',
-  'Fiji',
-  'Finland',
-  'France',
-  'Gabon',
-  'Gambia, The',
-  'Georgia',
-  'Germany',
-  'Ghana',
-  'Greece',
-  'Grenada',
-  'Guatemala',
-  'Guinea',
-  'Guinea-Bissau',
-  'Guyana',
-  'Haiti',
-  'Honduras',
-  'Hungary',
-  'Iceland',
-  'India',
-  'Indonesia',
-  'Iran',
-  'Iraq',
-  'Ireland',
-  'Israel',
-  'Italy',
-  'Jamaica',
-  'Japan',
-  'Jordan',
-  'Kazakhstan',
-  'Kenya',
-  'Kiribati',
-  'Korea, North',
-  'Korea, South',
-  'Kuwait',
-  'Kyrgyzstan',
-  'Laos',
-  'Latvia',
-  'Lebanon',
-  'Lesotho',
-  'Liberia',
-  'Libya',
-  'Liechtenstein',
-  'Lithuania',
-  'Luxembourg',
-  'Macedonia',
-  'Madagascar',
-  'Malawi',
-  'Malaysia',
-  'Maldives',
-  'Mali',
-  'Malta',
-  'Marshall Islands',
-  'Mauritania',
-  'Mauritius',
-  'Mexico',
-  'Micronesia',
-  'Moldova',
-  'Monaco',
-  'Mongolia',
-  'Morocco',
-  'Mozambique',
-  'Myanmar',
-  'Namibia',
-  'Nauru',
-  'Nepal',
-  'Netherlands',
-  'New Zealand',
-  'Nicaragua',
-  'Niger',
-  'Nigeria',
-  'Norway',
-  'Oman',
-  'Pakistan',
-  'Palau',
-  'Panama',
-  'Papua New Guinea',
-  'Paraguay',
-  'Peru',
-  'Philippines',
-  'Poland',
-  'Portugal',
-  'Qatar',
-  'Romania',
-  'Russia',
-  'Rwanda',
-  'Saint Kitts and Nevis',
-  'Saint Lucia',
-  'Saint Vincent',
-  'Samoa',
-  'San Marino',
-  'Sao Tome and Principe',
-  'Saudi Arabia',
-  'Senegal',
-  'Serbia and Montenegro',
-  'Seychelles',
-  'Sierra Leone',
-  'Singapore',
-  'Slovakia',
-  'Slovenia',
-  'Solomon Islands',
-  'Somalia',
-  'South Africa',
-  'Spain',
-  'Sri Lanka',
-  'Sudan',
-  'Suriname',
-  'Swaziland',
-  'Sweden',
-  'Switzerland',
-  'Syria',
-  'Taiwan',
-  'Tajikistan',
-  'Tanzania',
-  'Thailand',
-  'Togo',
-  'Tonga',
-  'Trinidad and Tobago',
-  'Tunisia',
-  'Turkey',
-  'Turkmenistan',
-  'Tuvalu',
-  'Uganda',
-  'Ukraine',
-  'United Arab Emirates',
-  'United Kingdom',
-  'United States',
-  'Uruguay',
-  'Uzbekistan',
-  'Vanuatu',
-  'Vatican City',
-  'Venezuela',
-  'Vietnam',
-  'Yemen',
-  'Zambia',
-  'Zimbabwe',
-]
-
-countries_data = [
     {
         "name": "Afghanistan",
         "capital": "Kabul",
@@ -2820,78 +2624,157 @@ countries_data = [
     }
 ]
 
+
 #       Ejercicios 1
 
-for i in countries:
-    print(i)
+n = 100 #int(input('Introduce un numero: '))
+
+def is_prime(n):
+    if n == 1 or n == 2 or n == 3 or n == 5 or n == 7 or n == 11:
+        return 'El numero es primo'
+    elif n % 2 == 0:
+        return 'El numero no es primo'
+    elif n % 3 == 0:
+        return 'El numero no es primo'
+    elif n % 5 == 0:
+        return 'El numero no es primo'
+    elif n % 7 == 0:
+        return 'El numero no es primo'
+    elif n % 11 == 0:
+        return 'El numero no es primo'
+    else:
+        return 'El numero es primo'
+
+print(is_prime(n))
 
 print('\n\n')
 
 
 #       Ejercicios 2
 
-fruit = ['banana', 'orange', 'mango', 'lemon']
-i = (len(fruit)) - 1
+lst = [37, 89, 45, 61, 22, 37]
 
-while i >= 0:
-    print(fruit[i])
-    i -= 1
+def unique_items(n):
+    cont = 0
+    for i in lst:
+        for j in range(len(lst)):
+            if lst[j] == i:
+                cont += 1
+                if cont > 1:
+                    return 'Tiene datos repetidos'  
+        cont = 0
+    return 'Tiene datos unicos'
+
+print(unique_items(n))
 
 print('\n\n')
 
 
 #       Ejercicios 3
 
-# Parte 1
-all_languages = dict()
-for dct in countries_data:
-    for lenguas in dct['languages']:
-        lenguas = str(lenguas)
-        if all_languages.get(lenguas) == None:
-            all_languages[lenguas] = 1
-        else:
-            all_languages[lenguas] += 1
-print(len(all_languages))
+lst = [37, 89, 45, 61, 22, 'school']
 
-print()
+def type_items(n):
+    cont = 0
+    for i in lst:
+        for j in range(len(lst)):
+            if type(lst[j]) != type(i):
+                cont += 1
+                if cont > 1:
+                    return 'Tiene diferentes tipos de datos'  
+        cont = 0
+    return 'Todos los datos son del mismo tipo'
+
+print(type_items(n))
+
+print('\n\n')
+
+
+#       Ejercicios 4
+
+text = 1 #input('Introduce el nombre de tu posible variable: ')
+
+def is_variable(text):
+    text = str(text)
+    print(text, end=" = ")
+    if text == 'True' or text == 'False' or text == 'for' or text == 'if' or text == 'while':
+        return 'no es valido como variable'
+    elif text.isidentifier() == False:
+        return 'no es valido como variable'
+    else:
+        return 'es valido como variable'
+
+print(is_variable(text))
+
+print('\n\n')
+
+
+#       Ejercicios 5
+
+"""
+countries = es una lista con todos los paises
+dct = es un directorio con la informacion de cada pais
+lenguas = es una lista con cada lengua dentro de dct
+all_languages = es un directorio con todas las lenguas y las veces que se repite 
+top = es una lista con el top de las lenguas
+"""
+
+# Parte 1
+cont = 10 #int(input('¿De cuantos puestos sera el top? = '))
+
+def most_spoken_languages(countries, cont):
+    all_languages = dict()
+    for dct in countries:
+        for lenguas in dct['languages']:
+            lenguas = str(lenguas)
+            if all_languages.get(lenguas) == None:
+                all_languages[lenguas] = 1
+            else:
+                all_languages[lenguas] += 1
+    
+    top = list()
+    for j in range(cont):
+        mayor_languages = max(all_languages.values())
+        for i in all_languages.keys():
+            if all_languages[i] == mayor_languages:
+                top.append(i)
+                del all_languages[i]
+                break
+
+    for i in range(len(top)):
+        print(f'{i + 1}.- {top[i]}')
+
+most_spoken_languages(countries, cont)
+
+print('\n\n')
 
 
 # Parte 2
-all_languages = dict()
-for dct in countries_data:
-    for lenguas in dct['languages']:
-        lenguas = str(lenguas)
-        if all_languages.get(lenguas) == None:
-            all_languages[lenguas] = 1
-        else:
-            all_languages[lenguas] += 1
+cont = int(input('¿De cuantos puestos sera el top? = '))
 
-mayor_languages = max(all_languages.values())
-for i in all_languages.keys():
-    if all_languages[i] == mayor_languages:
-        print(i)
+def most_populated_languages(countries, cont):
+    popularidad = dict()
+    num_popularidad = list()
+    for dct in countries:
+        num_popularidad.append(dct['population'] )
+        popularidad[dct['name']] = dct['population'] 
 
-print()
+    top = list()
+    for k in range(cont):
+        for i, j in popularidad.items():
+            mayor_population = max(num_popularidad)
+            if j == mayor_population:
+                top.append(i)
+                num_popularidad.remove(j)
+                break
+    
+    for i in range(len(top)):
+        print(f'{i + 1}.- {top[i]}')
+
+most_populated_languages(countries, cont)
 
 
-# Parte 3
-popularidad = dict()
-num_popularidad = list()
-for dct in countries_data:
-    num_popularidad.append(dct['population'] )
-    popularidad[dct['name']] = dct['population'] 
 
-top = list()
-for k in range(10):
-    for i, j in popularidad.items():
-        mayor_population = max(num_popularidad)
-        if j == mayor_population:
-            top.append(i)
-            num_popularidad.remove(j)
-            break
+print('\n\n')
 
-for i in range(len(top)):
-    print(f'{i + 1}.- {top[i]}')
-
-print()
 

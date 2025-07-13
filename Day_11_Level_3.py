@@ -2627,7 +2627,7 @@ countries = [
 
 #       Ejercicios 1
 
-n = 100 #int(input('Introduce un numero: '))
+n = int(input('Introduce un numero: '))
 
 def is_prime(n):
     if n == 1 or n == 2 or n == 3 or n == 5 or n == 7 or n == 11:
@@ -2692,7 +2692,7 @@ print('\n\n')
 
 #       Ejercicios 4
 
-text = 1 #input('Introduce el nombre de tu posible variable: ')
+text = input('Introduce el nombre de tu posible variable: ')
 
 def is_variable(text):
     text = str(text)
@@ -2720,7 +2720,7 @@ top = es una lista con el top de las lenguas
 """
 
 # Parte 1
-cont = 10 #int(input('¿De cuantos puestos sera el top? = '))
+cont = int(input('¿De cuantos puestos sera el top? = '))
 
 def most_spoken_languages(countries, cont):
     all_languages = dict()
